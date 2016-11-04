@@ -1,7 +1,6 @@
 # Gary Busey
 
-This is a fake payment gateway.  You call set the fail/succeed rate to determine what you get.  At 50% you never know what you are gonna get
-with Gary.
+This is a fake payment gateway.  You can set the fail/succeed rate to determine what you get.  At 50% you never know what you are gonna get with Gary.
 
 ![Gary](https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/09/12/22/Gary_Busey.jpg)
 
