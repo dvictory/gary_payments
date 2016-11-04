@@ -1,38 +1,30 @@
-# GaryBusey
+# Gary Busey
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/gary_busey`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This is a fake payment gateway.  You call set the fail/succeed rate to determine what you get.  At 50% you never know what you are gonna get
+with Gary.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'gary_busey'
+gem 'gary_busey', github: 'dvictory/gary_payments'
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install gary_busey
-
 ## Usage
 
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```
+gateway = GaryBusey::Gateway.new(percent_decline: 50)
+gateway.sale(100, {track2: '4111-1111-1111-1111')
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/gary_busey.
+Bug reports and pull requests are welcome on GitHub at https://github.com/dvictory/gary_payments.
 
 
 ## License
